@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Next App",
-  description: "First step to Next.js",
+  title: "Next Meals App",
+  description: "Super cool meals. Check it out!",
 };
 
 export default function RootLayout({
@@ -22,7 +23,10 @@ export default function RootLayout({
           sizes="32x32"
         />
       </head>
-      <body className="dark:bg-gray-900">{children}</body>
+      <body className="dark:bg-gray-900">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
