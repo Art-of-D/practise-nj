@@ -1,11 +1,14 @@
 import Link from "next/link";
+import Images from "@/components/Images";
 
 export default function Meals() {
   return (
     <>
-      <main className="flex flex-col gap-5 items-center">
-        <section className="flex gap-3 mr-3 ml-3 max-w-6xl w-5/6 h-96">
-          <div className="w-2xl h-[25rem]"></div>
+      <main className="mt-10 flex flex-col gap-5 items-center">
+        <section className="flex gap-10 mr-3 ml-3 max-w-6xl w-5/6 h-96">
+          <div className="relative w-2xl h-[25rem]">
+            <Images />
+          </div>
           <div className="flex flex-col justify-center gap-5">
             <div className="flex flex-col gap-5">
               <h1 className="text-3xl text-transparent font-bold uppercase letter-spacing-wide bg-gradient-to-r from-(--color-orange) to-(--color-yellow) bg-clip-text">
@@ -29,7 +32,7 @@ export default function Meals() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col  max-w-3xl mr-2 ml-2 text-center gap-3">
+        <section className="flex flex-col  max-w-3xl mt-10 mx-2 text-center gap-3">
           <h2 className="text-2xl font-bold">How it works</h2>
           <p>
             NextLevel Food is a platform for foodies to share their favorite
