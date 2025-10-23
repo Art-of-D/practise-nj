@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NavLink from "./NavLink";
 import Image from "next/image";
 
 const Header = () => {
@@ -12,10 +13,10 @@ const Header = () => {
         <nav className="h-20 flex items-center font-[--font-mono]">
           <ul className="flex flex-row space-between gap-3 text-xl font-bold">
             <li className="hover:underline hover:text-rose-900">
-              <Link href="/community">Community</Link>
+              <NavLink href="/community">Community</NavLink>
             </li>
             <li className="hover:underline hover:text-rose-900">
-              <Link href="/meals">Meals</Link>
+              <NavLink href="/meals">Meals</NavLink>
             </li>
           </ul>
         </nav>
