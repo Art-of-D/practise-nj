@@ -14,7 +14,10 @@ export default function NavLink({
   const path = usePathname();
   return (
     <>
-      <Link href={href} className={path.startsWith(href) ? "underline" : ""}>
+      <Link
+        href={href}
+        className={path.startsWith(href) ? "underline text-rose-900" : ""}
+      >
         {children}
       </Link>
     </>
