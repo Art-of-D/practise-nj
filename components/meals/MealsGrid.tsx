@@ -16,7 +16,7 @@ export type MealType = {
 export default function MealsGrid({ meals }: MealsGridProps) {
   return (
     <>
-      <ul>
+      <ul className="w-5/6 max-w-6xl grid gap-5 grid-cols-auto-20r my-auto mx-2 list-none p-0">
         {meals.map((meal: MealType) => (
           <li key={meal.id}>
             <Meal {...meal} />
