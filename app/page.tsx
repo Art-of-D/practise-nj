@@ -1,12 +1,16 @@
 import Link from "next/link";
 import Images from "@/components/Images";
+import { getMeals } from "@/lib/mealsDb";
 
-export default function Home() {
+export default async function Home() {
+  const resp = await getMeals();
+  const meals = resp.map((m) => ({ image: m.image, alt: m.summary }));
+
   return (
     <main className="mt-10 flex flex-col gap-5 items-center">
       <section className="flex gap-10 mr-3 ml-3 max-w-6xl w-5/6 h-96">
         <div className="relative w-2xl h-[25rem]">
-          <Images />
+          <Images images={meals} />
         </div>
         <div className="flex flex-col justify-center gap-5">
           <div className="flex flex-col gap-5">

@@ -13,7 +13,7 @@ export default function Meal({
     <article className="flex flex-col justify-between h-max rounded-sm overflow-hidden shadow-[0 0 12px rgba(0, 0, 0, 0.3)] transition-all duration-300 ease-in-out text-[#ddd6cb] bg-[linear-gradient(90deg, #2c1e19, #25200f)]">
       <header>
         <div className="relative h-[15rem] object-cover">
-          <Image src={`@/assets/${image}`} alt={title} fill />
+          <Image src={`/assets/${image}`} alt={title} fill />
         </div>
         <div className="pl-0.5 py-1 pr-0">
           <h2 className="m-0 text-2xl font-(--font-mono) m-0">{title}</h2>
